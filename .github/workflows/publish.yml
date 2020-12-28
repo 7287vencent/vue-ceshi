@@ -35,14 +35,14 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           # 私钥
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.mac-ssh }}
           # scp参数
           ARGS: "-avzr --delete"
           # 源目录
           SOURCE: "dist"
           # 服务器ip：换成你的服务器IP
-          REMOTE_HOST: "47.98.252.43"
+          # REMOTE_HOST: "47.98.252.43"
           # 用户
-          REMOTE_USER: "root"
+          # REMOTE_USER: "root"
           # 目标地址
-          TARGET: "/root/vue-in-action"
+          # TARGET: "/root/vue-in-action"
